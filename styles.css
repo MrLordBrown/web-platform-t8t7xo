@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "title week block"
+  "prime sec"
+  "prime tri";
+  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-rows: 20vh 40vh 40vh;
+}
+
+#title{
+  grid-area: "title";
+}
+#week{
+  grid-area: "week";
+}
+
+#block{
+  grid-area: "block";
+}
+#prime{
+  grid-area: "prime";
+}
+#sec{
+  grid-area: "Sec";
+}
+#tri{
+  grid-area: "tri";
+}
