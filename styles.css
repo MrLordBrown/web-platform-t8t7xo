@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 #body {
@@ -9,17 +10,20 @@
   "title week block"
   "prime prime sec"
   "prime prime tri";
-  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-columns: 33vw 34vw 33vw;
   grid-template-rows: 20vh 40vh 40vh;
-  background-image: radial-gradient(circle,gray,black);
+  background-image: radial-gradient(circle,#333333,#000000);
+  background-position: contain;
 }
 
 #title{
   grid-area: title;
   border-top-left-radius: 50%;
+  color: white;
 }
 #week, #block, #title {
   border-top: 2vw solid #d4b895;
+  box-shadow: 1vw 1vw black;
 }
 
 #title, #prime {
@@ -40,7 +44,7 @@
 
 #block{
   grid-area: block;
-  border-top-right-radius: 25%;
+  border-top-right-radius: 50%;
 }
 #prime{
   grid-area: prime;
