@@ -3,31 +3,49 @@
   margin: 0;
 }
 
-body {
+#body {
   display: grid;
-  grid-template-areas: "title week block"
-  "prime sec"
-  "prime tri";
+  grid-template-areas: 
+  "title week block"
+  "prime prime sec"
+  "prime prime tri";
   grid-template-columns: 33vw 33vw 33vw;
   grid-template-rows: 20vh 40vh 40vh;
 }
 
 #title{
-  grid-area: "title";
+  grid-area: title;
+  border-top-left-radius: 10%;
+}
+#week, #block, #title {
+  border-top: 2vw solid tan;
+}
+
+#title, #prime {
+  border-left: 2vw solid tan;
+}
+
+#prime, #tri {
+  border-bottom: 2vw solid tan;
+}
+
+#tri, #sec, #block {
+  border-right: 2vw solid tan;
 }
 #week{
-  grid-area: "week";
+  
+  grid-area: week;
 }
 
 #block{
-  grid-area: "block";
+  grid-area: block;
 }
 #prime{
-  grid-area: "prime";
+  grid-area: prime;
 }
 #sec{
-  grid-area: "Sec";
+  grid-area: sec;
 }
 #tri{
-  grid-area: "tri";
+  grid-area: tri;
 }
