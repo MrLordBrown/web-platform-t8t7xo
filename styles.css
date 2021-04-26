@@ -11,26 +11,27 @@
   "prime prime tri";
   grid-template-columns: 33vw 33vw 33vw;
   grid-template-rows: 20vh 40vh 40vh;
+  background-image: radial-gradient(circle,gray,black);
 }
 
 #title{
   grid-area: title;
-  border-top-left-radius: 10%;
+  border-top-left-radius: 50%;
 }
 #week, #block, #title {
-  border-top: 2vw solid tan;
+  border-top: 2vw solid #d4b895;
 }
 
 #title, #prime {
-  border-left: 2vw solid tan;
+  border-left: 2vw solid #d4b895;
 }
 
 #prime, #tri {
-  border-bottom: 2vw solid tan;
+  border-bottom: 2vw solid #d4b895;
 }
 
 #tri, #sec, #block {
-  border-right: 2vw solid tan;
+  border-right: 2vw solid #d4b895;
 }
 #week{
   
@@ -39,13 +40,16 @@
 
 #block{
   grid-area: block;
+  border-top-right-radius: 25%;
 }
 #prime{
   grid-area: prime;
+  border-bottom-left-radius: 25%;
 }
 #sec{
   grid-area: sec;
 }
 #tri{
   grid-area: tri;
+  border-bottom-right-radius: 25%;
 }
